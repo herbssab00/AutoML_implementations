@@ -98,6 +98,7 @@ def run_then_return_val_loss(t, r_i, X, y, seed):
 
 
 # returns top k configurations
+# T - list of configurations, L - list of losses, k - amount of models to return
 def top_k(T, L, k):
     # sort values by loss
     min_loss = np.argsort(L)[:k]
